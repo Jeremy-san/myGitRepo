@@ -1,37 +1,9 @@
 <h1>The Top 100 Movies of the 20th Century</h1>
 
-<div [ngClass]="{'vital' : showMovies}">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w185/wOBKAoUJZb5qTsWv5XXvVV2vUzz.jpg" class="card-img-top" alt="movie">
-        <h5>Movie</h5>
-        <p>This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w185/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg" class="card-img-top" alt="movie">
-        <h5>Movie1</h5>
-        <p>This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w185/4o1yeosjSFMaI9pe1rOkYcZ6hHO.jpg" class="card-img-top" alt="movie">
-        <h5>Movie2</h5>
-        <p>This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-  </div>
+<ul *appDisplayGuests= "showMovies">
+    <li appHightlight> Terminator</li>
+    <li>Le Roi Lion</li>
+    <li>Princess des glaces</li>
+    <li>Le voyage de TamTam</li>
 
-  <div [ngClass]="{'vital' : showMovies}">
-      <div class="card">
-        <img src="https://image.tmdb.org/t/p/w185/qZJ6d1SDsfoztmBfStwkBeTaOwG.jpg" class="card-img-top" alt="movie">
-          <h5>Movie</h5>
-          <p>This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card">
-        <img src="https://image.tmdb.org/t/p/w185/yPisjyLweCl1tbgwgtzBCNCBle.jpg" class="card-img-top" alt="movie">
-          <h5>Movie1</h5>
-          <p>This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card">
-        <img src="https://image.tmdb.org/t/p/w185/fjIVHiAaBUEtBbHgRLoTgeY8Ter.jpg" class="card-img-top" alt="movie">
-          <h5>Movie2</h5>
-          <p>This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
+  </ul>
