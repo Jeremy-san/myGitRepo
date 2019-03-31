@@ -1,0 +1,16 @@
+.vital{
+  font-size: 20px;
+  color: black;
+  display: flex;
+  align-content: center;
+  list-style: none;
+  justify-content: center;
+}
+.card{
+  border: 1% solid;
+  border-radius: 2%;
+}
+.card :hover{
+  box-shadow: 0 0 11px rgba(43, 41, 41, 0.774);
+  transition: box-shadow .3s;
+}
