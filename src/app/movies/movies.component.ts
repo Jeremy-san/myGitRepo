@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  showMovies = true;
+  showMovies: boolean;
+
+  effetHover = true;
+
+  displayGuest() {
+    this.showMovies = !this.showMovies;
+  }
 
   constructor() { }
 
@@ -15,3 +22,4 @@ export class MoviesComponent implements OnInit {
   }
 
 }
+

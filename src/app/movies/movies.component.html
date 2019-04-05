@@ -1,9 +1,11 @@
 <h1>The Top 100 Movies of the 20th Century</h1>
 
-<ul *appDisplayGuests= "showMovies">
-    <li appHightlight> Terminator</li>
-    <li>Le Roi Lion</li>
-    <li>Princess des glaces</li>
-    <li>Le voyage de TamTam</li>
-
-  </ul>
+<ng-template [appDisplayGuests]="showMovies">
+	<ul>
+		<li appHighlight>The Godfather</li>
+		<li>The Shawshank Redemption</li>
+		<li>Gone With the Wind</li>
+		<li>Schindler's List</li>
+	</ul>
+</ng-template>
+<button (click)='displayGuest()'>Nique bien ta mère !</button>
