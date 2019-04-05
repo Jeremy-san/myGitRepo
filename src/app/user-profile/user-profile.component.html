@@ -3,10 +3,18 @@
 <p>
   <img [src]="User.photo" [alt]=''/>
 </p>
-<p>Name :  {{ User.name }}</p>
-<p>Firstname : {{ User.firstName }}</p>
-<p>{{ User.quote }}</p>
+<p>
+  Name :  {{ User.name }}
+</p>
+<p>
+  Firstname : {{ User.firstName }}
+</p>
+<p>
+  {{ User.quote }}
+</p>
 <p [hidden]="this.hidden">Age : {{ User.age }}</p>
 <input type="text" [(ngModel)]= "User.quote">
 
 <button (click)="direBonjour()"></button>
+
+
